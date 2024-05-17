@@ -19,7 +19,6 @@ struct FiltersView: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    // Manufacturer Section
                     Text("Местоположение")
                         .font(.headline)
                         .padding(.vertical)
@@ -27,6 +26,7 @@ struct FiltersView: View {
                         HStack {
                             if let city = viewModel.filter.selectedCity {
                                 Button {
+                                    viewModel.filter.selectedCity = nil
                                     viewModel.showSelectCity.toggle()
                                 } label: {
                                     Text(city)
@@ -53,7 +53,6 @@ struct FiltersView: View {
 
                     Divider()
 
-                    // Types Section
                     Text("Состояние товара")
                         .font(.headline)
                         .padding(.vertical)
@@ -62,7 +61,7 @@ struct FiltersView: View {
                             ForEach(Condition.allCasesString(), id: \.self) { manufacturer in
                                 if viewModel.filter.selectedCondition == manufacturer {
                                     Button {
-                                        viewModel.filter.selectedCondition = manufacturer
+                                        viewModel.filter.selectedCondition = nil
                                     } label: {
                                         Text(manufacturer)
                                     }
@@ -98,7 +97,7 @@ struct FiltersView: View {
                                 ForEach(Category.getAllCasesString(), id: \.self) { manufacturer in
                                     if viewModel.filter.selectedCategory == manufacturer {
                                         Button {
-                                            viewModel.filter.selectedCategory = manufacturer
+                                            viewModel.filter.selectedCategory = nil
                                             viewModel.filter.selectedSubcategory = nil
                                         } label: {
                                             Text(manufacturer)
@@ -136,7 +135,7 @@ struct FiltersView: View {
                                     ForEach(Category.mapToCategory(from: viewModel.filter.selectedCategory ?? "", with: "").toStringSubtypes(), id: \.self) { manufacturer in
                                         if viewModel.filter.selectedSubcategory == manufacturer {
                                             Button {
-                                                viewModel.filter.selectedSubcategory = manufacturer
+                                                viewModel.filter.selectedSubcategory = nil
                                             } label: {
                                                 Text(manufacturer)
                                             }

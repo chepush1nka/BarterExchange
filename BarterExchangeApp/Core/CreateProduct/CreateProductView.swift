@@ -75,14 +75,16 @@ struct CreateProductView: View {
                 .fixedSize(horizontal: true, vertical: false)
                 .padding(.horizontal, -10)
 
-                if !viewModel.productSubtypes.isEmpty {
+                if viewModel.showSubtype {
                     Text("Подвид товара")
                         .font(.callout)
                         .foregroundStyle(Color(.systemGray))
                     HStack {
                         Picker("Вид товара", selection: $viewModel.selectedProductSubtype) {
                             ForEach(0..<viewModel.productSubtypes.count) { index in
-                                Text(viewModel.productSubtypes[index]).tag(index)
+                                if viewModel.productSubtypes.count > index {
+                                    Text(viewModel.productSubtypes[index]).tag(index)
+                                }
                             }
                         }
                         .pickerStyle(MenuPickerStyle())

@@ -24,6 +24,8 @@ class CreateProductViewModel: ObservableObject {
 
     @Published var selectedProductType = 0 {
         didSet {
+            selectedProductSubtype = 0
+            showSubtype = false
             setSubtypes(from: selectedProductType)
         }
     }
@@ -31,6 +33,7 @@ class CreateProductViewModel: ObservableObject {
     @Published var selectedCondition = 0
     @Published var showSearchCity = false
     @Published var status = ""
+    @Published var showSubtype = false
 
     let productTypes = Category.getAllCasesString()
 
@@ -113,9 +116,8 @@ class CreateProductViewModel: ObservableObject {
     private func setSubtypes(from selection: Int) {
         for category in Category.getAllCases() {
             if category.toString() == productTypes[selection] {
-                DispatchQueue.main.async {
-                    self.productSubtypes = category.toStringSubtypes()
-                }
+                self.productSubtypes = category.toStringSubtypes()
+                showSubtype = true
                 break
             }
         }
@@ -217,7 +219,8 @@ class CreateProductViewModel: ObservableObject {
         selectedProductSubtype = 0
         selectedCondition = 0
         showSearchCity = false
-        productSubtypes = []
+        productSubtypes = ["Не выбран"]
+        showSubtype = false
         existingProductUid = nil
     }
 }
