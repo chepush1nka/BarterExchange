@@ -74,14 +74,19 @@ struct CategoryView: View {
                             .padding(.leading)
                     }
 
-                    LazyVGrid(columns: column, spacing: 20) {
-                        ForEach(viewModel.filteredProducts, id: \.productUid) { product in
-                            NavigationLink(value: product) {
-                                ProductCard(product: product)
+                    if viewModel.filteredProducts.isEmpty {
+                        Text("Ничего не нашлось")
+                            .font(.headline)
+                    } else {
+                        LazyVGrid(columns: column, spacing: 20) {
+                            ForEach(viewModel.filteredProducts, id: \.productUid) { product in
+                                NavigationLink(value: product) {
+                                    ProductCard(product: product)
+                                }
                             }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
                 .navigationDestination(for: Product.self) { product in
                     ProductDetailView(product: product, getFavorites: viewModel.getFavorites)

@@ -23,6 +23,7 @@ class ChatViewModel: ObservableObject {
     @Published var chatMessages = [ChatMessage]()
 
     @Published var product: Product?
+    @Published var status = ""
     @Published var productUid: String = ""
     @Published var offerProduct: Product?
     @Published var offerProductUid: String = ""
@@ -54,6 +55,14 @@ class ChatViewModel: ObservableObject {
     func handleSendMessage() {
         let text = chatText
         print(text)
+        if text.count == 0 {
+            return
+        }
+        if text.count >= 600 {
+            status = "Cообщение не может содержать более 600 символов"
+            return
+        }
+        status = ""
         guard let fromId = FirebaseManager.shared.auth.currentUser?.uid,
               let toId = chatUser?.uid  else {
             return

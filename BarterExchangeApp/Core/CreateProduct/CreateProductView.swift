@@ -43,6 +43,10 @@ struct CreateProductView: View {
                     }
                 }
 
+                Text(viewModel.status)
+                    .font(.callout)
+                    .foregroundStyle(Color(.red))
+
                 Text("Название")
                     .font(.callout)
                     .foregroundStyle(Color(.systemGray))
@@ -114,8 +118,8 @@ struct CreateProductView: View {
                 Divider()
 
                 Button {
-                    viewModel.publishProduct()
-                    if let tab = setTab {
+                    let result = viewModel.publishProduct()
+                    if result, let tab = setTab {
                         tab()
                     }
                 } label: {

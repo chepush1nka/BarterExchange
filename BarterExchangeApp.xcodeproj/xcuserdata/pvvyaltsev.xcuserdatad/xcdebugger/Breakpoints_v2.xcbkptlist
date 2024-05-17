@@ -110,8 +110,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "storeUserInformation(url:)"
             landmarkType = "7">
             <Locations>
@@ -173,8 +173,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "persistImageToStorage()"
             landmarkType = "7">
             <Locations>
@@ -251,8 +251,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "persistImageToStorage()"
             landmarkType = "7">
             <Locations>
@@ -416,22 +416,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CA08FBA8-59C9-46F1-A3E4-1B13903A9B1B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BarterExchangeApp/Core/Chat/Chat/ChatView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "chatBottomBar"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "772D9677-9894-420F-A337-2DFC25BA19E0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -439,8 +423,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "handleSendMessage()"
             landmarkType = "7">
             <Locations>
@@ -550,8 +534,8 @@
             filePath = "BarterExchangeApp/Core/CreateProduct/ViewModels/CreateProductViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "storeProductInformation(productUid:urls:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -566,8 +550,8 @@
             filePath = "BarterExchangeApp/Core/CreateProduct/ViewModels/CreateProductViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "storeProductInformation(productUid:urls:)"
             landmarkType = "7">
             <Locations>
@@ -2130,8 +2114,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "fetchProduct(productUid:offer:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2146,8 +2130,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "fetchProduct(productUid:offer:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2162,8 +2146,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "fetchProduct(productUid:offer:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2178,8 +2162,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "fetchProduct(productUid:offer:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2321,8 +2305,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "init(chatUser:product:changeProduct:)"
             landmarkType = "7">
             <Locations>
@@ -2557,8 +2541,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ProfileInfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -2573,8 +2557,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "storeUserInformation(url:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2589,8 +2573,8 @@
             filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "storeUserInformation(url:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2765,8 +2749,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "handleSendMessage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2781,8 +2765,8 @@
             filePath = "BarterExchangeApp/Core/Chat/Chat/ViewModels/ChatViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "handleSendMessage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2865,6 +2849,102 @@
             endingLineNumber = "37"
             landmarkName = "init(documentId:data:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAB92850-62BD-4063-BB52-D90B570E3347"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "persistImageToStorage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAB92850-62BD-4063-BB52-D90B570E3347 - 23a1752f420a908c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarterExchangeApp.ProfileInfoViewModel.persistImageToStorage() -&gt; Swift.Bool"
+                  moduleName = "BarterExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pvvyaltsev/Desktop/%D0%94%D0%98%D0%9F%D0%9B%D0%9E%D0%9C/%D0%BA%D0%BE%D0%B4/BarterExchange/BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+               <Location
+                  uuid = "DAB92850-62BD-4063-BB52-D90B570E3347 - 23a1752f420a90eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarterExchangeApp.ProfileInfoViewModel.persistImageToStorage() -&gt; Swift.Bool"
+                  moduleName = "BarterExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pvvyaltsev/Desktop/%D0%94%D0%98%D0%9F%D0%9B%D0%9E%D0%9C/%D0%BA%D0%BE%D0%B4/BarterExchange/BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D0154BE-F6D6-481B-ADDA-4D31A551948C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "saveUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D0154BE-F6D6-481B-ADDA-4D31A551948C - d0fd74524c13035e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarterExchangeApp.ProfileInfoViewModel.saveUserInfo() -&gt; Swift.Bool"
+                  moduleName = "BarterExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pvvyaltsev/Desktop/%D0%94%D0%98%D0%9F%D0%9B%D0%9E%D0%9C/%D0%BA%D0%BE%D0%B4/BarterExchange/BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "0D0154BE-F6D6-481B-ADDA-4D31A551948C - d0fd74524c13037d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarterExchangeApp.ProfileInfoViewModel.saveUserInfo() -&gt; Swift.Bool"
+                  moduleName = "BarterExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pvvyaltsev/Desktop/%D0%94%D0%98%D0%9F%D0%9B%D0%9E%D0%9C/%D0%BA%D0%BE%D0%B4/BarterExchange/BarterExchangeApp/Core/Registration/CreateAccount/ProfileInfo/ViewModels/ProfileInfoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "596">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

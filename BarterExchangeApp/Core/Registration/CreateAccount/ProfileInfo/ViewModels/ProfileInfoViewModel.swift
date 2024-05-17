@@ -60,6 +60,7 @@ class ProfileInfoViewModel: ObservableObject {
             if let user = existingUser {
                 return self.storeUserInformation(url: user.profileImageUrl)
             }
+            statusLabel = "Пожалуйста, добавьте изображение профиля"
             return false
         }
         guard let uid = FirebaseManager.shared.auth.currentUser?.uid,
@@ -87,6 +88,7 @@ class ProfileInfoViewModel: ObservableObject {
     }
 
     func storeUserInformation(url: String) -> Bool {
+        statusLabel = ""
         guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
             return false
         }

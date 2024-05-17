@@ -30,10 +30,11 @@ class CreateProductViewModel: ObservableObject {
     @Published var selectedProductSubtype = 0
     @Published var selectedCondition = 0
     @Published var showSearchCity = false
+    @Published var status = ""
 
     let productTypes = Category.getAllCasesString()
 
-    var productSubtypes: [String] = []
+    var productSubtypes: [String] = ["Не выбран"]
 
     let conditions: [String] = Condition.allCasesString()
 
@@ -70,8 +71,27 @@ class CreateProductViewModel: ObservableObject {
             }
     }
 
-    func publishProduct() {
-        persistImagesToStorage()
+    func publishProduct() -> Bool {
+        self.status = ""
+        if title.isEmpty {
+            status = "Пожалуйста, укажите название товара"
+        } else if title.count > 40 {
+            status = "Название не может содержать более 40 символов"
+        } else {
+            if description.isEmpty {
+                status = "Пожалуйста, укажите описание товара"
+            } else if description.count > 600 {
+                status = "Описание не может содержать более 600 символов"
+            } else {
+                if location == "Выберите город" {
+                    status = "Пожалуйста, укажите город"
+                } else {
+                    //if
+                    return persistImagesToStorage()
+                }
+            }
+        }
+        return false
     }
 
     private func setImages(from selections: [PhotosPickerItem]) {
@@ -101,7 +121,7 @@ class CreateProductViewModel: ObservableObject {
         }
     }
 
-    private func persistImagesToStorage() {
+    private func persistImagesToStorage() -> Bool {
         var productUid = UUID().uuidString
         if let exProductUid = existingProductUid {
             productUid = exProductUid
@@ -110,12 +130,15 @@ class CreateProductViewModel: ObservableObject {
         guard !self.images.isEmpty else {
             if let imgs = existingImagesUrl {
                 self.storeProductInformation(productUid: productUid, urls: imgs)
+                return true
+            } else {
+                self.status = "Пожалуйста, приложите фото товара"
             }
-            return
+            return false
         }
         var urls: [String] = []
         guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
-            return
+            return false
         }
 
         let reference = FirebaseManager.shared.storage.reference(withPath: uid)
@@ -138,16 +161,23 @@ class CreateProductViewModel: ObservableObject {
                         urls.append(url.absoluteString)
                         if urls.count == self.images.count {
                             self.storeProductInformation(productUid: productUid, urls: urls)
+                            return
                         }
                     }
                 }
             }
         }
+        return true
     }
 
     func storeProductInformation(productUid: String, urls: [String]) {
         guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
             return
+        }
+
+        var subtype = ""
+        if !productSubtypes.isEmpty, productSubtypes.count < selectedProductSubtype {
+            subtype = productSubtypes[selectedProductSubtype]
         }
 
         let productData = [
@@ -157,7 +187,7 @@ class CreateProductViewModel: ObservableObject {
             "description": description,
             "productImageUrls": urls,
             "type": productTypes[selectedProductType],
-            "subtype": productSubtypes[selectedProductSubtype],
+            "subtype": subtype,
             "condition": conditions[selectedCondition],
             FirebaseConstants.timestamp: Timestamp(),
             "location": location
