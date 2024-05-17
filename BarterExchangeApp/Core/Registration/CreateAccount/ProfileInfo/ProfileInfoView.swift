@@ -55,6 +55,10 @@ struct ProfileInfoView: View {
                     Spacer()
                 }
                 .padding(.bottom)
+                Text(viewModel.statusLabel)
+                    .font(.callout)
+                    .foregroundStyle(.red)
+
                 Text("Имя")
                     .foregroundStyle(Color.gray.opacity(0.5))
                 TextField("", text: $viewModel.name)

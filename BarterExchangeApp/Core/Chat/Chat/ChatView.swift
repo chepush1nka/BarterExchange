@@ -169,8 +169,13 @@ struct ChatView: View {
             }
             .background(Color(.init(white: 0.95, alpha: 1)))
             .safeAreaInset(edge: .bottom) {
-                chatBottomBar
-                    .background(Color(.systemBackground).ignoresSafeArea())
+                VStack {
+                    Text(viewModel.status)
+                        .foregroundStyle(.red)
+                        .font(.callout)
+                    chatBottomBar
+                        .background(Color(.systemBackground).ignoresSafeArea())
+                }
             }
         }
     }
@@ -184,13 +189,12 @@ struct ChatView: View {
                 DescriptionPlaceholder()
                 TextEditor(text: $viewModel.chatText)
                     .opacity(viewModel.chatText.isEmpty ? 0.5 : 1)
+                    .lineLimit(5)
             }
             .frame(height: 40)
 
             Button {
-                if !viewModel.chatText.isEmpty {
-                    viewModel.handleSendMessage()
-                }
+                viewModel.handleSendMessage()
             } label: {
                 if !viewModel.chatText.isEmpty {
                     Image(systemName: "arrow.up")

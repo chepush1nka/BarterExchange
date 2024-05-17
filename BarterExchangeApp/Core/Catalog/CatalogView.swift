@@ -59,7 +59,3 @@ struct CatalogView: View {
         }
     }
 }
-
-//#Preview {
-//    CatalogView()
-//}
